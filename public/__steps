@@ -1,0 +1,39 @@
+**
+1.load data normally from products.json file to home page and show products on homepage as not using redux-thunk
+2.solved errors for keys
+3.go to react-redux site npm i react-redux redux
+4.set up redux store for that set up a file structure
+5.src-->redux-->store.js
+6.src-->redux-->reducer-->productreducer.js[here goes business logic]
+7.productReducer.js ----define initialState and productReducer function and export
+8.now pass productReducer function in store.js
+9.in store.js import {createStore } from 'redux';
+10.create store and pass productReducer and export store
+11.now we have to make available the store for the whole application using  Provider (wrapper) from react-redux
+12.to check everything is working properly..make a test state in productReducer.js
+13.to receive a state react-redux gives us a hook called useSelector with a callback function.
+in homepage we tested it successfully.that means we implemented redux with our project successfully
+-----------------------------------
+14.now start writing business logic in productReducer
+15.redux-->actionType--->actionTypes.js
+16.now we have to dispatch action on ProductCard.js using useDispatch hook
+17.using onclick event on button we can dispatch an object
+18.redux-->actionCreators-->productActions.js(here wrote dispatch function and export)
+19.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**
