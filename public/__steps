@@ -18,8 +18,9 @@ in homepage we tested it successfully.that means we implemented redux with our p
 15.redux-->actionType--->actionTypes.js
 16.now we have to dispatch action on ProductCard.js using useDispatch hook
 17.using onclick event on button we can dispatch an object
-18.redux-->actionCreators-->productActions.js(here wrote dispatch function and export)
-19.
+18.redux-->actionCreators-->productActions.js(here wrote dispatch function and export)to make code cleaner
+19.REDUX DEVTOOL INTEGRATION:install for chrome..integrate in application npm install --save @redux-devtools/extension
+20.store.js--import { composeWithDevTools } from '@redux-devtools/extension';
 
 
 
