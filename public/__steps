@@ -21,6 +21,21 @@ in homepage we tested it successfully.that means we implemented redux with our p
 18.redux-->actionCreators-->productActions.js(here wrote dispatch function and export)to make code cleaner
 19.REDUX DEVTOOL INTEGRATION:install for chrome..integrate in application npm install --save @redux-devtools/extension
 20.store.js--import { composeWithDevTools } from '@redux-devtools/extension';
+21.show cart product in cart.js:using useSelector hook and mapping
+22.coding remove from cart functionality.same way like add to cart(productReducer.js,actionTypes.js,productAction.js)making button on productCard.
+23.show remove button only in cart page by useLocation
+24.design remove button
+.................
+Implementing remove functionality perfectly:
+25.setting quantity on case ADD_TO_CART:
+a.spread action.payload,set quantity:1..now if u add a product besides other attribute it adds quantity :1
+b.in productreducer function make selectedProduct to check if the product is already in cart or not..if(selectedProduct)then increase quantity and remove that product from oldcart
+c.now make an UI for quantity including conditional rendering
+d.at this point if we click remove button still removes all products not decreasing quantity.
+e.to fix this behaviour write on case REMOVE_FROM_CART
+if(selectedProduct.quantity >1)
+selectedproduct er quantity komabo nahole mane quantity 1 hole id die cart theke remove korbo
+f.product cart theke remove korle jehetu UI te cart er shesh render hoy ty cart e add korar shomoy id onushate sort kore nici .
 
 
 
